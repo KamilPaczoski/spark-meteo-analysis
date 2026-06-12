@@ -1,11 +1,16 @@
 from __future__ import annotations
 
 import os
+import sys
 
 from pyspark.sql import SparkSession
 
 
 def create_spark(app_name: str = "spark-meteo-analysis") -> SparkSession:
+    py_exec = sys.executable
+    os.environ.setdefault("PYSPARK_PYTHON", py_exec)
+    os.environ.setdefault("PYSPARK_DRIVER_PYTHON", py_exec)
+
     master = os.getenv("SPARK_MASTER", "local[*]")
     partitions = os.getenv("SPARK_SQL_SHUFFLE_PARTITIONS", "8")
 

@@ -1,4 +1,4 @@
-pyspark==3.5.2
+pyspark~=3.5.2
 pandas
 numpy
 pyarrow
@@ -8,3 +8,4 @@ scikit-learn
 psutil
 jupyter
 ipykernel
+

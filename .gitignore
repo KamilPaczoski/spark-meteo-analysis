@@ -7,5 +7,6 @@
 out
 gen
 .venv/*
-data/bronze/*
+data/bronze/daily-summaries-latest
 data/silver/*
+data/gold/*
