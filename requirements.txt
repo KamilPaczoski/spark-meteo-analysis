@@ -1,0 +1,10 @@
+pyspark==3.5.2
+pandas
+numpy
+pyarrow
+matplotlib
+seaborn
+scikit-learn
+psutil
+jupyter
+ipykernel
